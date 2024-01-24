@@ -2,6 +2,7 @@
 // Primitive (Built-In) Data Types and their sizes
 
 #include <iostream>
+#include "cstdint"
 
 // To avoid continuously prefixing objects with "std::" - e.g. "std::cout"
 // We can declare that we are using the namespace throughout this file.
@@ -64,9 +65,14 @@ int main() {
     // (size of whole array in bytes) / (size of one element of the array)
 
     cout << "Number of elements in this 'int' arr[] is: " << sizeof(arr) / sizeof(int) << endl;
+
+
+    //TODO
+    // Q1. Display the size in bytes of a 'long long int'
+    // Print out the value of the worldPopulation variable.
+
+    cout << "Size in bytes of long long integer: " << sizeof(long long int) << endl;
+    cout << "Byte size of worldPopulation: " << sizeof(worldPopulation) << endl;
+
     return 0;
 }
-
-//TODO
-// Q1. Display the size in bytes of a 'long long int'
-// Print out the value of the worldPopulation variable.
